@@ -2239,7 +2239,7 @@ GameObject:
   - component: {fileID: 384575949}
   - component: {fileID: 384575948}
   m_Layer: 5
-  m_Name: BettingPanel (1)
+  m_Name: ScenesSwitchespanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
