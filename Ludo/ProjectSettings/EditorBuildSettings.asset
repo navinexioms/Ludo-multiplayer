@@ -9,5 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: fb4a9641d710b7b44ab3366242efb47e
   - enabled: 1
-    path: Assets/Scenes/NewScene.unity
+    path: Assets/Scenes/GameMenu.unity
     guid: 9f077e2bca4d17942b663565b70f5f2c
+  - enabled: 1
+    path: Assets/Scenes/ExtraScenes.unity
+    guid: 16e5d3bce32b14e4ca19500d8365a4f6
+  - enabled: 1
+    path: Assets/Scenes/ProfileScene.unity
+    guid: ff807bb583053fc488fefd20b224c48b
+  - enabled: 1
+    path: Assets/Scenes/SettingScene.unity
+    guid: 4606ff63cf702bc42b781768ecb471f6
+  - enabled: 1
+    path: Assets/Scenes/TransctionScene.unity
+    guid: 4fe97741c5c95f54f94010ead7a0caa2
+  - enabled: 1
+    path: Assets/Scenes/WalletScene.unity
+    guid: 741398eb3b21ab447b3c2029cfe99c07
