@@ -44,6 +44,10 @@ public class ExtraSceneController : MonoBehaviour
 	{
 		SceneManager.LoadScene ("ExtraScenes");
 	}
+	public void LoadMainGameSceneFromExtraScene()
+	{
+		SceneManager.LoadScene ("GameMenu");
+	}
 	// Use this for initialization
 
 }
