@@ -18,7 +18,7 @@ public class ExtraSceneController : MonoBehaviour
 	}
 	public void  LoadTransactionScene()
 	{
-		SceneManager.LoadScene ("TransactioScene");
+		SceneManager.LoadScene ("TransactionScene");
 	}
 	public void SettingScene()
 	{
@@ -26,7 +26,23 @@ public class ExtraSceneController : MonoBehaviour
 	}
 	public void Logout()
 	{
-		
+		SceneManager.LoadScene ("GameMenu");
+	}
+	public void SaveuserDataAndLoadExtraScene()
+	{
+		SceneManager.LoadScene ("ExtraScenes");
+	}	
+	public void LoadExtraSceneFromSetting()
+	{
+		SceneManager.LoadScene ("ExtraScenes");
+	}
+	public void LoadExtraScenefromtransaction()
+	{
+		SceneManager.LoadScene ("ExtraScenes");
+	}
+	public void LoadExtraSceneFromWalletScene()
+	{
+		SceneManager.LoadScene ("ExtraScenes");
 	}
 	// Use this for initialization
 
