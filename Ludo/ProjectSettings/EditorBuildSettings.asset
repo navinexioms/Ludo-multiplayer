@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Home.unity
     guid: fb4a9641d710b7b44ab3366242efb47e
   - enabled: 1
     path: Assets/Scenes/GameMenu.unity
@@ -21,8 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SettingScene.unity
     guid: 4606ff63cf702bc42b781768ecb471f6
   - enabled: 1
-    path: Assets/Scenes/TransctionScene.unity
+    path: Assets/Scenes/TransactionScene.unity
     guid: 4fe97741c5c95f54f94010ead7a0caa2
   - enabled: 1
     path: Assets/Scenes/WalletScene.unity
     guid: 741398eb3b21ab447b3c2029cfe99c07
+  - enabled: 1
+    path: Assets/Scenes/PlayerVSAI.unity
+    guid: e16e532647ba6664e8b2c717a59ebcb9

@@ -649,14 +649,14 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 433974184}
   m_TextComponent: {fileID: 236876854}
   m_Placeholder: {fileID: 1228171195}
-  m_ContentType: 0
+  m_ContentType: 9
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 5
   m_LineType: 0
-  m_HideMobileInput: 0
-  m_CharacterValidation: 0
-  m_CharacterLimit: 0
+  m_HideMobileInput: 1
+  m_CharacterValidation: 1
+  m_CharacterLimit: 10
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -853,10 +853,10 @@ RectTransform:
   m_Father: {fileID: 610517396}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -548}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0.35250002, y: 0.03143322}
+  m_AnchorMax: {x: 0.65000004, y: 0.07781108}
+  m_AnchoredPosition: {x: -1, y: 0.5}
+  m_SizeDelta: {x: -78, y: -27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &579396338
 MonoBehaviour:
@@ -1944,7 +1944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1508878029
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2318,13 +2318,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1736190442}
   m_TextComponent: {fileID: 399158210}
   m_Placeholder: {fileID: 1537534641}
-  m_ContentType: 7
+  m_ContentType: 8
   m_InputType: 2
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2586,13 +2586,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1906601053}
   m_TextComponent: {fileID: 1720036886}
   m_Placeholder: {fileID: 457693478}
-  m_ContentType: 0
+  m_ContentType: 6
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 7
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 5
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:

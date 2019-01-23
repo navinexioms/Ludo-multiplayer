@@ -108,8 +108,12 @@ public class SceneController : MonoBehaviour
 	} 
 	public void LoadGameOptionMenu()
 	{
-		
+
 		Anim.SetInteger ("Counter",1);
 		StartCoroutine (HoldForoneSec ());
+	}
+	public void LoadPlayerVSAIScene()
+	{
+		SceneManager.LoadScene ("PlayerVSAI");
 	}
 }

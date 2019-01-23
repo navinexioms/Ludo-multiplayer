@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class ExtraSceneController : MonoBehaviour 
 {
+	public static int HowManyPlayers;
 	public void LoadExtraScene()
 	{
 		SceneManager.LoadScene ("ExtraScenes");
@@ -48,6 +49,9 @@ public class ExtraSceneController : MonoBehaviour
 	{
 		SceneManager.LoadScene ("GameMenu");
 	}
-	// Use this for initialization
-
+	public void LoadPlayerVSAIScene()
+	{
+		HowManyPlayers = 2;
+		SceneManager.LoadScene ("PlayerVSAI");
+	}
 }
