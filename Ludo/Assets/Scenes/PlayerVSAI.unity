@@ -124,10 +124,10 @@ GameObject:
   - component: {fileID: 1518499}
   - component: {fileID: 1518498}
   - component: {fileID: 1518497}
-  - component: {fileID: 1518500}
-  - component: {fileID: 1518501}
   - component: {fileID: 1518502}
   - component: {fileID: 1518503}
+  - component: {fileID: 1518501}
+  - component: {fileID: 1518500}
   m_Layer: 5
   m_Name: GreenPlayer I
   m_TagString: Untagged
@@ -1073,10 +1073,10 @@ GameObject:
   - component: {fileID: 217564593}
   - component: {fileID: 217564592}
   - component: {fileID: 217564591}
-  - component: {fileID: 217564594}
-  - component: {fileID: 217564595}
   - component: {fileID: 217564596}
   - component: {fileID: 217564597}
+  - component: {fileID: 217564595}
+  - component: {fileID: 217564594}
   m_Layer: 5
   m_Name: GreenPlayer III
   m_TagString: Untagged
@@ -3778,11 +3778,11 @@ GameObject:
   - component: {fileID: 889787806}
   - component: {fileID: 889787809}
   - component: {fileID: 889787808}
-  - component: {fileID: 889787811}
   - component: {fileID: 889787807}
-  - component: {fileID: 889787810}
   - component: {fileID: 889787812}
   - component: {fileID: 889787813}
+  - component: {fileID: 889787811}
+  - component: {fileID: 889787810}
   m_Layer: 5
   m_Name: BluePlayer II
   m_TagString: Untagged
@@ -4245,10 +4245,10 @@ GameObject:
   - component: {fileID: 951817214}
   - component: {fileID: 951817213}
   - component: {fileID: 951817212}
-  - component: {fileID: 951817215}
-  - component: {fileID: 951817216}
   - component: {fileID: 951817217}
   - component: {fileID: 951817218}
+  - component: {fileID: 951817216}
+  - component: {fileID: 951817215}
   m_Layer: 5
   m_Name: GreenPlayer II
   m_TagString: Untagged
@@ -6321,10 +6321,10 @@ GameObject:
   - component: {fileID: 1337348677}
   - component: {fileID: 1337348676}
   - component: {fileID: 1337348675}
-  - component: {fileID: 1337348678}
-  - component: {fileID: 1337348679}
   - component: {fileID: 1337348680}
   - component: {fileID: 1337348681}
+  - component: {fileID: 1337348679}
+  - component: {fileID: 1337348678}
   m_Layer: 5
   m_Name: GreenPlayer IV
   m_TagString: Untagged
@@ -7573,10 +7573,10 @@ GameObject:
   - component: {fileID: 1662628262}
   - component: {fileID: 1662628261}
   - component: {fileID: 1662628260}
-  - component: {fileID: 1662628263}
-  - component: {fileID: 1662628264}
   - component: {fileID: 1662628265}
   - component: {fileID: 1662628266}
+  - component: {fileID: 1662628264}
+  - component: {fileID: 1662628263}
   m_Layer: 5
   m_Name: BluePlayer III
   m_TagString: Untagged
@@ -8831,6 +8831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1925862079}
   - component: {fileID: 1925862078}
+  - component: {fileID: 1925862080}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -8862,6 +8863,69 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1925862080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1925862077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd0335db10fd404fb5fbb5f585dae37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueFrame: {fileID: 0}
+  GreenFrame: {fileID: 0}
+  BlueplayerI_Border: {fileID: 0}
+  BlueplayerII_Border: {fileID: 0}
+  BlueplayerIII_Border: {fileID: 0}
+  BlueplayerIV_Border: {fileID: 0}
+  GreenPlayerI_Border: {fileID: 0}
+  GreenPlayerII_Border: {fileID: 0}
+  GreenPlayerIII_Border: {fileID: 0}
+  GreenPlayerIV_Border: {fileID: 0}
+  BluePlayerI_Pos: {x: 0, y: 0, z: 0}
+  BluePlayerII_Pos: {x: 0, y: 0, z: 0}
+  BluePlayerIII_Pos: {x: 0, y: 0, z: 0}
+  BluePlayerIV_Pos: {x: 0, y: 0, z: 0}
+  GreenPlayerI_Pos: {x: 0, y: 0, z: 0}
+  GreenPlayerII_Pos: {x: 0, y: 0, z: 0}
+  GreenPlayerIII_Pos: {x: 0, y: 0, z: 0}
+  GreenPlayerIV_Pos: {x: 0, y: 0, z: 0}
+  BluePlayerI_Button: {fileID: 0}
+  BluePlayerII_Button: {fileID: 0}
+  BluePlayerIII_Button: {fileID: 0}
+  BluePlayerIV_Button: {fileID: 0}
+  GreeplayerI_Button: {fileID: 0}
+  GreeplayerII_Button: {fileID: 0}
+  GreeplayerIII_Button: {fileID: 0}
+  GreeplayerIV_Button: {fileID: 0}
+  BlueScreen: {fileID: 0}
+  GreenScreen: {fileID: 0}
+  BlueRankText: {fileID: 0}
+  GreenRankText: {fileID: 0}
+  diceRoll: {fileID: 0}
+  DiceRollButton: {fileID: 0}
+  BlueDiceRollPosition: {fileID: 0}
+  GreenDiceRollPosition: {fileID: 0}
+  bluePlayerI: {fileID: 0}
+  bluePlayerII: {fileID: 0}
+  bluePlayerIII: {fileID: 0}
+  bluePlayerIV: {fileID: 0}
+  greenPlayerI: {fileID: 0}
+  greenPlayerII: {fileID: 0}
+  greenPlayerIII: {fileID: 0}
+  greenPlayerIV: {fileID: 0}
+  dice1_Roll_Animation: {fileID: 0}
+  dice2_Roll_Animation: {fileID: 0}
+  dice3_Roll_Animation: {fileID: 0}
+  dice4_Roll_Animation: {fileID: 0}
+  dice5_Roll_Animation: {fileID: 0}
+  dice6_Roll_Animation: {fileID: 0}
+  blueMovemenBlock: []
+  greenMovementBlock: []
+  confirmScreen: {fileID: 0}
+  gameCompletedScreen: {fileID: 0}
 --- !u!1 &1944043461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9338,10 +9402,10 @@ GameObject:
   - component: {fileID: 1988182040}
   - component: {fileID: 1988182039}
   - component: {fileID: 1988182038}
-  - component: {fileID: 1988182041}
-  - component: {fileID: 1988182042}
   - component: {fileID: 1988182044}
   - component: {fileID: 1988182043}
+  - component: {fileID: 1988182042}
+  - component: {fileID: 1988182041}
   m_Layer: 5
   m_Name: BluePlayer I
   m_TagString: Untagged
@@ -10062,10 +10126,10 @@ GameObject:
   - component: {fileID: 2118714653}
   - component: {fileID: 2118714652}
   - component: {fileID: 2118714651}
-  - component: {fileID: 2118714654}
-  - component: {fileID: 2118714655}
   - component: {fileID: 2118714656}
   - component: {fileID: 2118714657}
+  - component: {fileID: 2118714655}
+  - component: {fileID: 2118714654}
   m_Layer: 5
   m_Name: BluePlayer IV
   m_TagString: Untagged
