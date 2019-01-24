@@ -9,7 +9,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 
 	public GameObject BlueFrame, GreenFrame;
 
-	public GameObject BlueplayerI_Border,BlueplayerII_Border,BlueplayerIII_Border,BlueplayerIV_Border;
+	public GameObject BluePlayerI_Border,BluePlayerII_Border,BluePlayerIII_Border,BluePlayerIV_Border;
 	public GameObject GreenPlayerI_Border,GreenPlayerII_Border,GreenPlayerIII_Border,GreenPlayerIV_Border;
 
 	public Vector3 BluePlayerI_Pos,BluePlayerII_Pos,BluePlayerIII_Pos,BluePlayerIV_Pos;

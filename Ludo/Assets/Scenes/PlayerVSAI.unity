@@ -3318,8 +3318,8 @@ RectTransform:
   - {fileID: 1885020033}
   - {fileID: 1606314199}
   - {fileID: 95695824}
-  - {fileID: 1191389756}
   - {fileID: 1134418411}
+  - {fileID: 1191389756}
   - {fileID: 1340421004}
   m_Father: {fileID: 1615452839}
   m_RootOrder: 1
@@ -5054,7 +5054,7 @@ RectTransform:
   m_LocalScale: {x: 2.0957727, y: 2.0957727, z: 2.0957727}
   m_Children: []
   m_Father: {fileID: 788004086}
-  m_RootOrder: 78
+  m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.65000004, y: 0.65557903}
   m_AnchorMax: {x: 0.93700004, y: 0.9343685}
@@ -5577,7 +5577,7 @@ RectTransform:
   m_LocalScale: {x: 2.0957727, y: 2.0957727, z: 2.0957727}
   m_Children: []
   m_Father: {fileID: 788004086}
-  m_RootOrder: 77
+  m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8874,16 +8874,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd0335db10fd404fb5fbb5f585dae37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BlueFrame: {fileID: 0}
-  GreenFrame: {fileID: 0}
-  BlueplayerI_Border: {fileID: 0}
-  BlueplayerII_Border: {fileID: 0}
-  BlueplayerIII_Border: {fileID: 0}
-  BlueplayerIV_Border: {fileID: 0}
-  GreenPlayerI_Border: {fileID: 0}
-  GreenPlayerII_Border: {fileID: 0}
-  GreenPlayerIII_Border: {fileID: 0}
-  GreenPlayerIV_Border: {fileID: 0}
+  BlueFrame: {fileID: 95695823}
+  GreenFrame: {fileID: 1134418410}
+  BluePlayerI_Border: {fileID: 1855633570}
+  BluePlayerII_Border: {fileID: 64928050}
+  BluePlayerIII_Border: {fileID: 722733803}
+  BluePlayerIV_Border: {fileID: 700003264}
+  GreenPlayerI_Border: {fileID: 855591616}
+  GreenPlayerII_Border: {fileID: 1164113229}
+  GreenPlayerIII_Border: {fileID: 1963980861}
+  GreenPlayerIV_Border: {fileID: 1324410243}
   BluePlayerI_Pos: {x: 0, y: 0, z: 0}
   BluePlayerII_Pos: {x: 0, y: 0, z: 0}
   BluePlayerIII_Pos: {x: 0, y: 0, z: 0}
@@ -8892,38 +8892,152 @@ MonoBehaviour:
   GreenPlayerII_Pos: {x: 0, y: 0, z: 0}
   GreenPlayerIII_Pos: {x: 0, y: 0, z: 0}
   GreenPlayerIV_Pos: {x: 0, y: 0, z: 0}
-  BluePlayerI_Button: {fileID: 0}
-  BluePlayerII_Button: {fileID: 0}
-  BluePlayerIII_Button: {fileID: 0}
-  BluePlayerIV_Button: {fileID: 0}
-  GreeplayerI_Button: {fileID: 0}
-  GreeplayerII_Button: {fileID: 0}
-  GreeplayerIII_Button: {fileID: 0}
-  GreeplayerIV_Button: {fileID: 0}
+  BluePlayerI_Button: {fileID: 1988182038}
+  BluePlayerII_Button: {fileID: 889787807}
+  BluePlayerIII_Button: {fileID: 1662628260}
+  BluePlayerIV_Button: {fileID: 2118714651}
+  GreeplayerI_Button: {fileID: 1518497}
+  GreeplayerII_Button: {fileID: 951817212}
+  GreeplayerIII_Button: {fileID: 217564591}
+  GreeplayerIV_Button: {fileID: 1337348675}
   BlueScreen: {fileID: 0}
   GreenScreen: {fileID: 0}
   BlueRankText: {fileID: 0}
   GreenRankText: {fileID: 0}
-  diceRoll: {fileID: 0}
-  DiceRollButton: {fileID: 0}
-  BlueDiceRollPosition: {fileID: 0}
-  GreenDiceRollPosition: {fileID: 0}
-  bluePlayerI: {fileID: 0}
-  bluePlayerII: {fileID: 0}
-  bluePlayerIII: {fileID: 0}
-  bluePlayerIV: {fileID: 0}
-  greenPlayerI: {fileID: 0}
-  greenPlayerII: {fileID: 0}
-  greenPlayerIII: {fileID: 0}
-  greenPlayerIV: {fileID: 0}
-  dice1_Roll_Animation: {fileID: 0}
-  dice2_Roll_Animation: {fileID: 0}
-  dice3_Roll_Animation: {fileID: 0}
-  dice4_Roll_Animation: {fileID: 0}
-  dice5_Roll_Animation: {fileID: 0}
-  dice6_Roll_Animation: {fileID: 0}
-  blueMovemenBlock: []
-  greenMovementBlock: []
+  diceRoll: {fileID: 1279276873}
+  DiceRollButton: {fileID: 1279276874}
+  BlueDiceRollPosition: {fileID: 1095813798}
+  GreenDiceRollPosition: {fileID: 2018475674}
+  bluePlayerI: {fileID: 1988182036}
+  bluePlayerII: {fileID: 889787805}
+  bluePlayerIII: {fileID: 1662628258}
+  bluePlayerIV: {fileID: 2118714649}
+  greenPlayerI: {fileID: 1518495}
+  greenPlayerII: {fileID: 951817210}
+  greenPlayerIII: {fileID: 217564589}
+  greenPlayerIV: {fileID: 1337348673}
+  dice1_Roll_Animation: {fileID: 1515484575}
+  dice2_Roll_Animation: {fileID: 1721556}
+  dice3_Roll_Animation: {fileID: 1908295502}
+  dice4_Roll_Animation: {fileID: 1411247320}
+  dice5_Roll_Animation: {fileID: 620748157}
+  dice6_Roll_Animation: {fileID: 1725100277}
+  blueMovemenBlock:
+  - {fileID: 237130069}
+  - {fileID: 1092534990}
+  - {fileID: 891023690}
+  - {fileID: 1118780370}
+  - {fileID: 1144088656}
+  - {fileID: 1184255219}
+  - {fileID: 407761372}
+  - {fileID: 902196183}
+  - {fileID: 1953417592}
+  - {fileID: 807260957}
+  - {fileID: 1043493513}
+  - {fileID: 1913023991}
+  - {fileID: 716034909}
+  - {fileID: 1944043461}
+  - {fileID: 1584546119}
+  - {fileID: 1274179639}
+  - {fileID: 1239550266}
+  - {fileID: 1693003049}
+  - {fileID: 1958491427}
+  - {fileID: 633662147}
+  - {fileID: 433491456}
+  - {fileID: 1230709710}
+  - {fileID: 339259962}
+  - {fileID: 115820848}
+  - {fileID: 2081786124}
+  - {fileID: 2069159262}
+  - {fileID: 1669211760}
+  - {fileID: 1651707769}
+  - {fileID: 2129605925}
+  - {fileID: 1864295812}
+  - {fileID: 1002920302}
+  - {fileID: 1411978548}
+  - {fileID: 1875891695}
+  - {fileID: 817665572}
+  - {fileID: 666437400}
+  - {fileID: 2144899234}
+  - {fileID: 1973764405}
+  - {fileID: 1881995228}
+  - {fileID: 1236410720}
+  - {fileID: 905437211}
+  - {fileID: 1454007496}
+  - {fileID: 442787954}
+  - {fileID: 1023944251}
+  - {fileID: 993722550}
+  - {fileID: 640501227}
+  - {fileID: 1633210986}
+  - {fileID: 823587950}
+  - {fileID: 2002602690}
+  - {fileID: 910045571}
+  - {fileID: 669974040}
+  - {fileID: 1969651050}
+  - {fileID: 43149932}
+  - {fileID: 1109528345}
+  - {fileID: 529359088}
+  - {fileID: 1223261187}
+  - {fileID: 731737532}
+  - {fileID: 1812348566}
+  greenMovementBlock:
+  - {fileID: 1669211760}
+  - {fileID: 1651707769}
+  - {fileID: 2129605925}
+  - {fileID: 1864295812}
+  - {fileID: 1002920302}
+  - {fileID: 1411978548}
+  - {fileID: 1875891695}
+  - {fileID: 817665572}
+  - {fileID: 666437400}
+  - {fileID: 2144899234}
+  - {fileID: 1973764405}
+  - {fileID: 1881995228}
+  - {fileID: 1236410720}
+  - {fileID: 905437211}
+  - {fileID: 1454007496}
+  - {fileID: 442787954}
+  - {fileID: 1023944251}
+  - {fileID: 993722550}
+  - {fileID: 640501227}
+  - {fileID: 1633210986}
+  - {fileID: 823587950}
+  - {fileID: 2002602690}
+  - {fileID: 910045571}
+  - {fileID: 669974040}
+  - {fileID: 1969651050}
+  - {fileID: 18356057}
+  - {fileID: 237130069}
+  - {fileID: 1092534990}
+  - {fileID: 891023690}
+  - {fileID: 1118780370}
+  - {fileID: 1144088656}
+  - {fileID: 1184255219}
+  - {fileID: 407761372}
+  - {fileID: 902196183}
+  - {fileID: 1953417592}
+  - {fileID: 807260957}
+  - {fileID: 1043493513}
+  - {fileID: 1913023991}
+  - {fileID: 716034909}
+  - {fileID: 1944043461}
+  - {fileID: 1584546119}
+  - {fileID: 1274179639}
+  - {fileID: 1239550266}
+  - {fileID: 1693003049}
+  - {fileID: 1958491427}
+  - {fileID: 633662147}
+  - {fileID: 433491456}
+  - {fileID: 1230709710}
+  - {fileID: 339259962}
+  - {fileID: 115820848}
+  - {fileID: 2081786124}
+  - {fileID: 871522717}
+  - {fileID: 1898574608}
+  - {fileID: 281765610}
+  - {fileID: 1228161092}
+  - {fileID: 1165028653}
+  - {fileID: 1155837175}
   confirmScreen: {fileID: 0}
   gameCompletedScreen: {fileID: 0}
 --- !u!1 &1944043461
