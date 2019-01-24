@@ -59,7 +59,202 @@ public class PlayerVSAIGameScript : MonoBehaviour
 	public GameObject confirmScreen;
 	public GameObject gameCompletedScreen;
 
+	void InitializeDice()
+	{
+		print ("Dice interactable becomes true");
 
+		DiceRollButton.interactable = true;
+		
+		dice1_Roll_Animation.SetActive (false);
+		dice2_Roll_Animation.SetActive (false);
+		dice3_Roll_Animation.SetActive (false);
+		dice4_Roll_Animation.SetActive (false);
+		dice5_Roll_Animation.SetActive (false);
+		dice6_Roll_Animation.SetActive (false);
+
+		//==============CHECKING WHO PLAYER WINS SURING===========//
+		switch (ExtraSceneController.HowManyPlayers) 
+		{
+		case 2:
+			if (totalBlueInHouse > 3) 
+			{
+				print ("Player Wins");
+				playerTurn = "none";
+			}
+			if (totalGreenInHouse > 3) 
+			{
+				print ("AI Wins");
+				playerTurn = "none";
+			}
+			break;
+		}
+
+		//=============getting currentPlayer Value===========//
+		if (currentPlayerName.Contains ("BLUE PLAYER")) 
+		{
+			if (currentPlayerName == "BLUE PLAYER I") 
+			{
+				currentPlayer = BluePlayerI_Script.BluePlayerI_ColName;
+				print ("currentPlayerName:" + currentPlayerName);
+				print ("currentPlayer:" + currentPlayer);
+			}
+			if (currentPlayerName == "BLUE PLAYER II") 
+			{
+				currentPlayer = BluePlayerII_Script.BluePlayerII_ColName;
+				print ("currentPlayerName:" + currentPlayerName);
+				print ("currentPlayer:" + currentPlayer);
+			}
+			if (currentPlayerName == "BLUE PLAYER III") 
+			{
+				currentPlayer = BluePlayerIII_Script.BluePlayerIII_ColName;
+				print ("currentPlayerName:" + currentPlayerName);
+				print ("currentPlayer:" + currentPlayer);
+			}
+			if (currentPlayerName == "BLUE PLAYER IV") 
+			{
+				currentPlayer = BluePlayerIV_Script.BluePlayerIV_ColName;
+				print ("currentPlayerName:" + currentPlayerName);
+				print ("currentPlayer:" + currentPlayer);
+			}
+		}
+		if (currentPlayerName.Contains ("GREEN PLAYER")) 
+		{
+			if (currentPlayerName == "GREEN PLAYER I") 
+			{
+				currentPlayer = GreenPlayerI_Script.GreenPlayerI_ColName;
+				print ("currentPlayerName:" + currentPlayerName);
+				print ("currentPlayer:" + currentPlayer);
+			}
+			if (currentPlayerName == "GREEN PLAYER II") 
+			{
+				currentPlayer = GreenPlayerII_Script.GreenPlayerII_ColName;
+				print ("currentPlayerName:" + currentPlayerName);
+				print ("currentPlayer:" + currentPlayer);
+			}
+			if (currentPlayerName == "GREEN PLAYER III") 
+			{
+				currentPlayer = GreenPlayerIII_Script.GreenPlayerIII_ColName;
+				print ("currentPlayerName:" + currentPlayerName);
+				print ("currentPlayer:" + currentPlayer);
+			}
+			if (currentPlayerName == "GREEN PLAYER IV") 
+			{
+				currentPlayer = GreenPlayerIV_Script.GreenPlayerIV_ColName;
+				print ("currentPlayerName:" + currentPlayerName);
+				print ("currentPlayer:" + currentPlayer);
+			}
+		}
+
+		//============PLayer vs Opponent=============//
+		if (currentPlayer != "none") 
+		{
+			switch (ExtraSceneController.HowManyPlayers) 
+			{
+			case 2:
+				if (currentPlayerName.Contains ("BLUE PLAYER")) 
+				{
+					if (currentPlayer == GreenPlayerI_Script.GreenPlayerI_ColName && (currentPlayer != "Star" && GreenPlayerI_Script.GreenPlayerI_ColName != "Star")) 
+					{
+						greenPlayerI.transform.position = GreenPlayerI_Pos;
+						GreenPlayerI_Script.GreenPlayerI_ColName = "none";
+						greenPlayerI_Steps = 0;
+						playerTurn = "BLUE";
+					}
+					if (currentPlayer == GreenPlayerII_Script.GreenPlayerII_ColName && (currentPlayer != "Star" && GreenPlayerII_Script.GreenPlayerII_ColName != "Star")) 
+					{
+						greenPlayerII.transform.position = GreenPlayerII_Pos;
+						GreenPlayerII_Script.GreenPlayerII_ColName = "none";
+						greenPlayerII_Steps = 0;
+						playerTurn = "BLUE";
+					}
+					if (currentPlayer == GreenPlayerIII_Script.GreenPlayerIII_ColName && (currentPlayer != "Star" && GreenPlayerIII_Script.GreenPlayerIII_ColName != "Star")) 
+					{
+						greenPlayerIII.transform.position = GreenPlayerIII_Pos;
+						GreenPlayerIII_Script.GreenPlayerIII_ColName = "none";
+						greenPlayerIII_Steps = 0;
+						playerTurn = "BLUE";
+					}
+					if (currentPlayer == GreenPlayerIV_Script.GreenPlayerIV_ColName && (currentPlayer != "Star" && GreenPlayerIV_Script.GreenPlayerIV_ColName != "Star")) 
+					{
+						greenPlayerIV.transform.position = GreenPlayerIV_Pos;
+						GreenPlayerIV_Script.GreenPlayerIV_ColName = "none";
+						greenPlayerIV_Steps = 0;
+						playerTurn = "BLUE";
+					}
+				}
+
+				if (currentPlayerName.Contains ("GREEN PLAYER")) 
+				{
+					if (currentPlayer == BluePlayerI_Script.BluePlayerI_ColName && (currentPlayer != "Star" && BluePlayerI_Script.BluePlayerI_ColName != "Star")) 
+					{
+						bluePlayerI.transform.position = BluePlayerI_Pos;
+						BluePlayerI_Script.BluePlayerI_ColName = "none";
+						bluePlayerI_Steps = 0;
+						playerTurn = "GREEN";
+					}
+					if (currentPlayer == BluePlayerII_Script.BluePlayerII_ColName && (currentPlayer != "Star" && BluePlayerII_Script.BluePlayerII_ColName != "Star")) 
+					{
+						bluePlayerII.transform.position = BluePlayerII_Pos;
+						BluePlayerII_Script.BluePlayerII_ColName = "none";
+						bluePlayerII_Steps = 0;
+						playerTurn = "GREEN";
+					}
+					if (currentPlayer == BluePlayerIII_Script.BluePlayerIII_ColName && (currentPlayer != "Star" && BluePlayerIII_Script.BluePlayerIII_ColName != "Star")) 
+					{
+						bluePlayerIII.transform.position = BluePlayerIII_Pos;
+						BluePlayerIII_Script.BluePlayerIII_ColName = "none";
+						bluePlayerIII_Steps = 0;
+						playerTurn = "GREEN";
+					}
+					if (currentPlayer == BluePlayerIV_Script.BluePlayerIV_ColName && (currentPlayer != "Star" && BluePlayerIV_Script.BluePlayerIV_ColName != "Star")) 
+					{
+						bluePlayerIV.transform.position = BluePlayerIV_Pos;
+						BluePlayerIV_Script.BluePlayerIV_ColName = "none";
+						bluePlayerIV_Steps = 0;
+						playerTurn = "GREEN";
+					}
+				}
+				break;
+			}
+		}
+		switch (ExtraSceneController.HowManyPlayers) 
+		{
+		case 2:
+			if (playerTurn == "BLUE") {
+				diceRoll.position = BlueDiceRollPosition.position;
+				BlueFrame.SetActive (true);
+				GreenFrame.SetActive (false);
+			}
+			if (playerTurn == "GREEN") {
+				diceRoll.position = GreenDiceRollPosition.position;
+				BlueFrame.SetActive (false);
+				GreenFrame.SetActive (true);
+			}
+			//=================disabling buttons==============//
+			BluePlayerI_Button.interactable = false;
+			BluePlayerII_Button.interactable = false;
+			BluePlayerIII_Button.interactable = false;
+			BluePlayerIV_Button.interactable = false;
+
+			GreenPlayerI_Button.interactable = false;
+			GreenPlayerII_Button.interactable = false;
+			GreenPlayerI_Button.interactable = false;
+			GreenPlayerIV_Button.interactable = false;
+
+			//===================disabling Animations===========//
+			BluePlayerI_Border.SetActive (false);
+			BluePlayerII_Border.SetActive (false);
+			BluePlayerIII_Border.SetActive (false);
+			BluePlayerIV_Border.SetActive (false);
+
+			GreenPlayerI_Border.SetActive (false);
+			GreenPlayerII_Border.SetActive (false);
+			GreenPlayerIII_Border.SetActive (false);
+			GreenPlayerIV_Border.SetActive (false);
+			break;
+		}
+		selectDiceNumAnimation = 0;
+	}
 	public void DiceRoll()
 	{
 		DiceRollButton.interactable = false;
@@ -213,6 +408,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 				case 2:
 					print ("PLAYERS DON'T HAVE OPTION TO MOVE , SWITCH TO NEXT PLAYER TURN");
 					playerTurn = "GREEN";
+					InitializeDice ();
 				break;
 
 				}
@@ -300,8 +496,8 @@ public class PlayerVSAIGameScript : MonoBehaviour
 				case 2:
 					print ("GREEN PLAYER DON'T HAVE OPTION TO MOVE , SWITCH TO NEXT PLAYER TURN");
 					playerTurn = "BLUE";
+					InitializeDice ();
 					break;
-
 				}
 			}
 			break;
@@ -395,7 +591,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 						playerTurn = "GREEN";
 						break;
 					}
-					//InitializeDice();
+					InitializeDice();
 				}
 			}
 		}
@@ -503,7 +699,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 						playerTurn = "GREEN";
 						break;
 					}
-					//InitializeDice();
+					InitializeDice();
 				}
 			}
 		}
@@ -611,7 +807,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 						playerTurn = "GREEN";
 						break;
 					}
-					//InitializeDice();
+					InitializeDice();
 				}
 			}
 		}
@@ -719,7 +915,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 						playerTurn = "GREEN";
 						break;
 					}
-					//InitializeDice();
+					InitializeDice();
 				}
 			}
 		}
@@ -831,7 +1027,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 						playerTurn = "BLUE";
 						break;
 					}
-					//InitializeDice();
+					InitializeDice();
 				}
 			}
 		}
@@ -940,7 +1136,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 						playerTurn = "BLUE";
 						break;
 					}
-					//InitializeDice();
+					InitializeDice();
 				}
 			}
 		}
@@ -1049,7 +1245,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 						playerTurn = "BLUE";
 						break;
 					}
-					//InitializeDice();
+					InitializeDice();
 				}
 			}
 		}
@@ -1158,7 +1354,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 						playerTurn = "BLUE";
 						break;
 					}
-					//InitializeDice();
+					InitializeDice();
 				}
 			}
 		}
@@ -1211,5 +1407,9 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			GreenFrame.SetActive (false);
 			break;
 		}
+	}
+	void Update()
+	{
+		print ("PlayerTurn:"+playerTurn);
 	}
 }
