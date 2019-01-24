@@ -4711,7 +4711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1058033182
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6017,7 +6017,6 @@ GameObject:
   - component: {fileID: 1279276876}
   - component: {fileID: 1279276875}
   - component: {fileID: 1279276874}
-  - component: {fileID: 1279276877}
   m_Layer: 5
   m_Name: DiceButton
   m_TagString: Untagged
@@ -6087,7 +6086,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1279276875}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1925862080}
+        m_MethodName: DiceRoll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1279276875
@@ -6123,23 +6133,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1279276872}
---- !u!95 &1279276877
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1279276872}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5423cc1ab82ce0b46a4822ac18f7eb8a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1324410243
 GameObject:
   m_ObjectHideFlags: 0
@@ -8896,10 +8889,10 @@ MonoBehaviour:
   BluePlayerII_Button: {fileID: 889787807}
   BluePlayerIII_Button: {fileID: 1662628260}
   BluePlayerIV_Button: {fileID: 2118714651}
-  GreeplayerI_Button: {fileID: 1518497}
-  GreeplayerII_Button: {fileID: 951817212}
-  GreeplayerIII_Button: {fileID: 217564591}
-  GreeplayerIV_Button: {fileID: 1337348675}
+  GreenPlayerI_Button: {fileID: 1518497}
+  GreenPlayerII_Button: {fileID: 951817212}
+  GreenPlayerIII_Button: {fileID: 217564591}
+  GreenPlayerIV_Button: {fileID: 1337348675}
   BlueScreen: {fileID: 0}
   GreenScreen: {fileID: 0}
   BlueRankText: {fileID: 0}
