@@ -125,6 +125,9 @@ GameObject:
   - component: {fileID: 1518498}
   - component: {fileID: 1518497}
   - component: {fileID: 1518500}
+  - component: {fileID: 1518501}
+  - component: {fileID: 1518502}
+  - component: {fileID: 1518503}
   m_Layer: 5
   m_Name: GreenPlayer I
   m_TagString: Untagged
@@ -189,7 +192,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1518498}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1518498
@@ -273,6 +287,62 @@ MonoBehaviour:
   vector3Arrays: []
   transformArrays: []
   paths: []
+--- !u!114 &1518501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5a6c7ae7891c14b9a4dffe4fda184d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1518502
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518495}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 49}
+  m_EdgeRadius: 0
+--- !u!50 &1518503
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518495}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1721556
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,15 +555,15 @@ RectTransform:
   m_GameObject: {fileID: 22120844}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2008966, y: 1.2008966, z: 1.2008966}
+  m_LocalScale: {x: 1.2008965, y: 1.2008965, z: 1.2008965}
   m_Children: []
-  m_Father: {fileID: 419392547}
-  m_RootOrder: 0
+  m_Father: {fileID: 1839903969}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.013749999, y: 0.08212731}
+  m_AnchorMin: {x: 0.015000001, y: 0.079}
   m_AnchorMax: {x: 0.172, y: 0.18}
-  m_AnchoredPosition: {x: -283.48752, y: -438.03882}
-  m_SizeDelta: {x: 83.77501, y: 88.22286}
+  m_AnchoredPosition: {x: 0.81256104, y: -1.8569946}
+  m_SizeDelta: {x: -25.625, y: -30.686249}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22120846
 MonoBehaviour:
@@ -600,7 +670,7 @@ GameObject:
   - component: {fileID: 64928055}
   - component: {fileID: 64928052}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BlueCircle II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -662,7 +732,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 64928053}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &64928053
@@ -756,13 +837,14 @@ GameObject:
   - component: {fileID: 95695824}
   - component: {fileID: 95695826}
   - component: {fileID: 95695825}
+  - component: {fileID: 95695827}
   m_Layer: 5
   m_Name: FrameBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &95695824
 RectTransform:
   m_ObjectHideFlags: 0
@@ -776,10 +858,10 @@ RectTransform:
   m_Father: {fileID: 788004086}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -226, y: -228}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.05757894, y: 0.0575263}
+  m_AnchorMax: {x: 0.34300002, y: 0.33936843}
+  m_AnchoredPosition: {x: 1.5, y: 1}
+  m_SizeDelta: {x: -117, y: -114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95695825
 MonoBehaviour:
@@ -814,6 +896,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 95695823}
+--- !u!114 &95695827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95695823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe1355469f9d4a8d8399e46358cccdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenName: 
+  playAutomatically: 1
+  delay: 0
+  type: 28
+  showIconInInspector: 0
+  keys:
+  - amount
+  - time
+  - speed
+  - easetype
+  - looptype
+  indexes: 0000000000000000010000000000000000000000
+  metadatas:
+  - 
+  - 
+  - 
+  - 
+  - 
+  ints: 
+  floats:
+  - 0.5
+  - 0.5
+  bools: 
+  strings: []
+  vector3s:
+  - {x: 1.03, y: 1.03, z: 1.03}
+  colors: []
+  spaces: 
+  easeTypes: 15000000
+  loopTypes: 02000000
+  gameObjects: []
+  transforms: []
+  audioClips: []
+  audioSources: []
+  vector3Arrays: []
+  transformArrays: []
+  paths: []
 --- !u!1 &115820848
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +1074,9 @@ GameObject:
   - component: {fileID: 217564592}
   - component: {fileID: 217564591}
   - component: {fileID: 217564594}
+  - component: {fileID: 217564595}
+  - component: {fileID: 217564596}
+  - component: {fileID: 217564597}
   m_Layer: 5
   m_Name: GreenPlayer III
   m_TagString: Untagged
@@ -1008,7 +1141,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 217564592}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &217564592
@@ -1086,6 +1230,62 @@ MonoBehaviour:
   vector3Arrays: []
   transformArrays: []
   paths: []
+--- !u!114 &217564595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 217564589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac578fca15fbbbb459d95924a2a67a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &217564596
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 217564589}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 49}
+  m_EdgeRadius: 0
+--- !u!50 &217564597
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 217564589}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &222905000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,15 +1724,15 @@ RectTransform:
   m_GameObject: {fileID: 415455656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2008966, y: 1.2008966, z: 1.2008966}
+  m_LocalScale: {x: 1.2008965, y: 1.2008965, z: 1.2008965}
   m_Children: []
-  m_Father: {fileID: 419392547}
-  m_RootOrder: 1
+  m_Father: {fileID: 1839903969}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8175001, y: 0.82565457}
   m_AnchorMax: {x: 0.97125, y: 0.9216545}
-  m_AnchoredPosition: {x: 276.6626, y: 439.89325}
-  m_SizeDelta: {x: 84.624954, y: 90.01805}
+  m_AnchoredPosition: {x: 0.6000366, y: -0.000061035156}
+  m_SizeDelta: {x: -23, y: -23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &415455658
 MonoBehaviour:
@@ -1567,43 +1767,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 415455656}
---- !u!1 &419392546
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 419392547}
-  m_Layer: 5
-  m_Name: PlayersDetails
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &419392547
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 419392546}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 22120845}
-  - {fileID: 415455657}
-  - {fileID: 527825897}
-  - {fileID: 2094672257}
-  m_Father: {fileID: 1839903969}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &433491456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,16 +1991,16 @@ RectTransform:
   m_GameObject: {fileID: 527825896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3660176, y: 0.34676102, z: 1.2008966}
+  m_LocalScale: {x: 1.3660175, y: 0.346761, z: 1.2008965}
   m_Children:
   - {fileID: 1391401950}
-  m_Father: {fileID: 419392547}
-  m_RootOrder: 2
+  m_Father: {fileID: 1839903969}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.119500004, y: 0.12769055}
   m_AnchorMax: {x: 0.35250002, y: 0.15900001}
-  m_AnchoredPosition: {x: -186.00002, y: -415.87988}
-  m_SizeDelta: {x: 109.700035, y: 96.85977}
+  m_AnchoredPosition: {x: -1.1999817, y: 4}
+  m_SizeDelta: {x: -53.4, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &527825898
 MonoBehaviour:
@@ -2414,7 +2577,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &700003264
 GameObject:
@@ -2429,7 +2592,7 @@ GameObject:
   - component: {fileID: 700003269}
   - component: {fileID: 700003266}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BlueCircle IV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2491,7 +2654,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 700003267}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &700003267
@@ -2706,7 +2880,7 @@ GameObject:
   - component: {fileID: 722733808}
   - component: {fileID: 722733805}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BlueCircle III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2768,7 +2942,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 722733806}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &722733806
@@ -3367,7 +3552,7 @@ GameObject:
   - component: {fileID: 855591621}
   - component: {fileID: 855591618}
   m_Layer: 5
-  m_Name: Button
+  m_Name: GreenCircle I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3429,7 +3614,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 855591619}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &855591619
@@ -3582,8 +3778,11 @@ GameObject:
   - component: {fileID: 889787806}
   - component: {fileID: 889787809}
   - component: {fileID: 889787808}
+  - component: {fileID: 889787811}
   - component: {fileID: 889787807}
   - component: {fileID: 889787810}
+  - component: {fileID: 889787812}
+  - component: {fileID: 889787813}
   m_Layer: 5
   m_Name: BluePlayer II
   m_TagString: Untagged
@@ -3648,7 +3847,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 889787808}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &889787808
@@ -3732,6 +3942,62 @@ MonoBehaviour:
   vector3Arrays: []
   transformArrays: []
   paths: []
+--- !u!114 &889787811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889787805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0621e94ecd679e4da45fde268ca9ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &889787812
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889787805}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 49}
+  m_EdgeRadius: 0
+--- !u!50 &889787813
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889787805}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &891023690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,6 +4246,9 @@ GameObject:
   - component: {fileID: 951817213}
   - component: {fileID: 951817212}
   - component: {fileID: 951817215}
+  - component: {fileID: 951817216}
+  - component: {fileID: 951817217}
+  - component: {fileID: 951817218}
   m_Layer: 5
   m_Name: GreenPlayer II
   m_TagString: Untagged
@@ -4044,7 +4313,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 951817213}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &951817213
@@ -4122,6 +4402,62 @@ MonoBehaviour:
   vector3Arrays: []
   transformArrays: []
   paths: []
+--- !u!114 &951817216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951817210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a04f1c59afefb2d469c12ed3e65388b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &951817217
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951817210}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 49}
+  m_EdgeRadius: 0
+--- !u!50 &951817218
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951817210}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &993722550
 GameObject:
   m_ObjectHideFlags: 0
@@ -4535,7 +4871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.18825, y: 0.037436347}
   m_AnchorMax: {x: 0.32750002, y: 0.12769055}
-  m_AnchoredPosition: {x: -1.0499878, y: -1.499939}
+  m_AnchoredPosition: {x: -1.0499878, y: -1.5}
   m_SizeDelta: {x: -11, y: -17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095813799
@@ -4699,13 +5035,14 @@ GameObject:
   - component: {fileID: 1134418411}
   - component: {fileID: 1134418413}
   - component: {fileID: 1134418412}
+  - component: {fileID: 1134418414}
   m_Layer: 5
   m_Name: FrameGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1134418411
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4719,10 +5056,10 @@ RectTransform:
   m_Father: {fileID: 788004086}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 225, y: 225.99998}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.65000004, y: 0.65557903}
+  m_AnchorMax: {x: 0.93700004, y: 0.9343685}
+  m_AnchoredPosition: {x: 2, y: 1.9999847}
+  m_SizeDelta: {x: -118, y: -112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134418412
 MonoBehaviour:
@@ -4757,6 +5094,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1134418410}
+--- !u!114 &1134418414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1134418410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe1355469f9d4a8d8399e46358cccdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenName: 
+  playAutomatically: 1
+  delay: 0
+  type: 28
+  showIconInInspector: 0
+  keys:
+  - amount
+  - time
+  - speed
+  - easetype
+  - looptype
+  indexes: 0000000000000000010000000000000000000000
+  metadatas:
+  - 
+  - 
+  - 
+  - 
+  - 
+  ints: 
+  floats:
+  - 0.5
+  - 0.5
+  bools: 
+  strings: []
+  vector3s:
+  - {x: 1.03, y: 1.03, z: 1.03}
+  colors: []
+  spaces: 
+  easeTypes: 15000000
+  loopTypes: 02000000
+  gameObjects: []
+  transforms: []
+  audioClips: []
+  audioSources: []
+  vector3Arrays: []
+  transformArrays: []
+  paths: []
 --- !u!1 &1144088656
 GameObject:
   m_ObjectHideFlags: 0
@@ -4888,7 +5273,7 @@ GameObject:
   - component: {fileID: 1164113234}
   - component: {fileID: 1164113231}
   m_Layer: 5
-  m_Name: Button
+  m_Name: GreenCircle II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4950,7 +5335,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1164113232}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1164113232
@@ -5162,13 +5558,14 @@ GameObject:
   - component: {fileID: 1191389756}
   - component: {fileID: 1191389758}
   - component: {fileID: 1191389757}
+  - component: {fileID: 1191389759}
   m_Layer: 5
   m_Name: FrameRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1191389756
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5220,6 +5617,41 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1191389755}
+--- !u!114 &1191389759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1191389755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe1355469f9d4a8d8399e46358cccdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenName: 
+  playAutomatically: 1
+  delay: 0
+  type: 17
+  showIconInInspector: 1
+  keys: []
+  indexes: 
+  metadatas: []
+  ints: 
+  floats: []
+  bools: 
+  strings: []
+  vector3s: []
+  colors: []
+  spaces: 
+  easeTypes: 
+  loopTypes: 
+  gameObjects: []
+  transforms: []
+  audioClips: []
+  audioSources: []
+  vector3Arrays: []
+  transformArrays: []
+  paths: []
 --- !u!1 &1223261187
 GameObject:
   m_ObjectHideFlags: 0
@@ -5721,7 +6153,7 @@ GameObject:
   - component: {fileID: 1324410248}
   - component: {fileID: 1324410245}
   m_Layer: 5
-  m_Name: Button
+  m_Name: GreenCircle IV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5783,7 +6215,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1324410246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1324410246
@@ -5879,6 +6322,9 @@ GameObject:
   - component: {fileID: 1337348676}
   - component: {fileID: 1337348675}
   - component: {fileID: 1337348678}
+  - component: {fileID: 1337348679}
+  - component: {fileID: 1337348680}
+  - component: {fileID: 1337348681}
   m_Layer: 5
   m_Name: GreenPlayer IV
   m_TagString: Untagged
@@ -5943,7 +6389,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1337348676}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1337348676
@@ -6021,6 +6478,62 @@ MonoBehaviour:
   vector3Arrays: []
   transformArrays: []
   paths: []
+--- !u!114 &1337348679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1337348673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf63f40758a9e7478fe1c6ea5ede6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1337348680
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1337348673}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 49}
+  m_EdgeRadius: 0
+--- !u!50 &1337348681
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1337348673}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1340421003
 GameObject:
   m_ObjectHideFlags: 0
@@ -6031,13 +6544,14 @@ GameObject:
   - component: {fileID: 1340421004}
   - component: {fileID: 1340421006}
   - component: {fileID: 1340421005}
+  - component: {fileID: 1340421007}
   m_Layer: 5
   m_Name: FrameYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1340421004
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6089,6 +6603,41 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1340421003}
+--- !u!114 &1340421007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340421003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe1355469f9d4a8d8399e46358cccdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenName: 
+  playAutomatically: 1
+  delay: 0
+  type: 17
+  showIconInInspector: 1
+  keys: []
+  indexes: 
+  metadatas: []
+  ints: 
+  floats: []
+  bools: 
+  strings: []
+  vector3s: []
+  colors: []
+  spaces: 
+  easeTypes: 
+  loopTypes: 
+  gameObjects: []
+  transforms: []
+  audioClips: []
+  audioSources: []
+  vector3Arrays: []
+  transformArrays: []
+  paths: []
 --- !u!1 &1391401949
 GameObject:
   m_ObjectHideFlags: 0
@@ -7025,6 +7574,9 @@ GameObject:
   - component: {fileID: 1662628261}
   - component: {fileID: 1662628260}
   - component: {fileID: 1662628263}
+  - component: {fileID: 1662628264}
+  - component: {fileID: 1662628265}
+  - component: {fileID: 1662628266}
   m_Layer: 5
   m_Name: BluePlayer III
   m_TagString: Untagged
@@ -7089,7 +7641,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1662628261}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1662628261
@@ -7173,6 +7736,62 @@ MonoBehaviour:
   vector3Arrays: []
   transformArrays: []
   paths: []
+--- !u!114 &1662628264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662628258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac3ce7f5dbf46d4e93e90177e94773e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1662628265
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662628258}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 49}
+  m_EdgeRadius: 0
+--- !u!50 &1662628266
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662628258}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1669211760
 GameObject:
   m_ObjectHideFlags: 0
@@ -7489,7 +8108,7 @@ GameObject:
   - component: {fileID: 1839903971}
   - component: {fileID: 1839903970}
   m_Layer: 5
-  m_Name: GameBoard
+  m_Name: PlayerDetails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7506,7 +8125,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2061524685}
-  - {fileID: 419392547}
+  - {fileID: 22120845}
+  - {fileID: 415455657}
+  - {fileID: 527825897}
+  - {fileID: 2094672257}
   m_Father: {fileID: 1615452839}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7561,7 +8183,7 @@ GameObject:
   - component: {fileID: 1855633575}
   - component: {fileID: 1855633572}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BlueCircle I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7623,7 +8245,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1855633573}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1855633573
@@ -8189,6 +8822,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 100, y: 100}
   m_EdgeRadius: 0
+--- !u!1 &1925862077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1925862079}
+  - component: {fileID: 1925862078}
+  m_Layer: 0
+  m_Name: SceneController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1925862078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1925862077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd2eb542213224847a19c5a5464c84ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1925862079
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1925862077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.903137, y: 168.9353, z: -0.54356855}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1944043461
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,7 +9052,7 @@ GameObject:
   - component: {fileID: 1963980866}
   - component: {fileID: 1963980863}
   m_Layer: 5
-  m_Name: Button
+  m_Name: GreenCircle III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8441,7 +9114,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1963980864}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1963980864
@@ -8655,6 +9339,9 @@ GameObject:
   - component: {fileID: 1988182039}
   - component: {fileID: 1988182038}
   - component: {fileID: 1988182041}
+  - component: {fileID: 1988182042}
+  - component: {fileID: 1988182044}
+  - component: {fileID: 1988182043}
   m_Layer: 5
   m_Name: BluePlayer I
   m_TagString: Untagged
@@ -8719,7 +9406,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1988182039}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1988182039
@@ -8803,6 +9501,62 @@ MonoBehaviour:
   vector3Arrays: []
   transformArrays: []
   paths: []
+--- !u!114 &1988182042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1988182036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b053ce81b5e504197c620bb21b2218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1988182043
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1988182036}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &1988182044
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1988182036}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 49}
+  m_EdgeRadius: 0
 --- !u!1 &2002602690
 GameObject:
   m_ObjectHideFlags: 0
@@ -9063,7 +9817,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2061524687}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1925862078}
+        m_MethodName: LoadMainGameSceneFromExtraScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2061524687
@@ -9242,16 +10007,16 @@ RectTransform:
   m_GameObject: {fileID: 2094672256}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3660176, y: 0.34676102, z: 1.2008966}
+  m_LocalScale: {x: 1.3660175, y: 0.346761, z: 1.2008965}
   m_Children:
   - {fileID: 1455546743}
-  m_Father: {fileID: 419392547}
-  m_RootOrder: 3
+  m_Father: {fileID: 1839903969}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.64624995, y: 0.8346545}
   m_AnchorMax: {x: 0.87000006, y: 0.86421824}
-  m_AnchoredPosition: {x: 179.94756, y: 412.0821}
-  m_SizeDelta: {x: 106.28511, y: 96.80462}
+  m_AnchoredPosition: {x: -0.739975, y: 0.7001343}
+  m_SizeDelta: {x: -50.33998, y: 61.999992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094672258
 MonoBehaviour:
@@ -9298,6 +10063,9 @@ GameObject:
   - component: {fileID: 2118714652}
   - component: {fileID: 2118714651}
   - component: {fileID: 2118714654}
+  - component: {fileID: 2118714655}
+  - component: {fileID: 2118714656}
+  - component: {fileID: 2118714657}
   m_Layer: 5
   m_Name: BluePlayer IV
   m_TagString: Untagged
@@ -9362,7 +10130,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2118714652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2118714652
@@ -9446,6 +10225,62 @@ MonoBehaviour:
   vector3Arrays: []
   transformArrays: []
   paths: []
+--- !u!114 &2118714655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2118714649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9702233c1aae4b43a43d05170730eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &2118714656
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2118714649}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 49}
+  m_EdgeRadius: 0
+--- !u!50 &2118714657
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2118714649}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2129605925
 GameObject:
   m_ObjectHideFlags: 0
