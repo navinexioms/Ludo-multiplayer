@@ -245,7 +245,6 @@ public class PlayerVSAIGameScript : MonoBehaviour
 				GreenFrame.SetActive (true);
 			}
 			//=================disabling buttons==============//
-
 			BluePlayerI_Button.interactable = false;
 			BluePlayerII_Button.interactable = false;
 			BluePlayerIII_Button.interactable = false;
@@ -257,8 +256,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			GreenPlayerIV_Button.interactable = false;
 
 			//==============disabling the raycast===============//
-			/*
-			BluePlayerI_Button.GetComponent<Image>().raycastTarget=false;
+			/*BluePlayerI_Button.GetComponent<Image>().raycastTarget=false;
 			BluePlayerII_Button.GetComponent<Image>().raycastTarget=false;
 			BluePlayerIII_Button.GetComponent<Image>().raycastTarget=false;
 			BluePlayerIV_Button.GetComponent<Image>().raycastTarget=false;
@@ -283,18 +281,6 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			break;
 		}
 		selectDiceNumAnimation = 0;
-	}
-	void AIMove()
-	{
-		int number = Random.Range (1, 5);
-		if (number == 1 && GreenPlayerI_Border.activeInHierarchy) 
-		{
-			BlueplayerII_UI ();
-		}
-		if (number == 2) 
-		{
-			
-		}
 	}
 	public void DiceRoll()
 	{
@@ -437,6 +423,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			}
 
 			//=========================PLAYERS DON'T HAVE ANY MOVES , SWITCH TO NEXT PLAYER'S TURN=========================//
+
 			if (!BluePlayerI_Border.activeInHierarchy && !BluePlayerII_Border.activeInHierarchy &&
 			   !BluePlayerIII_Border.activeInHierarchy && !BluePlayerIV_Border.activeInHierarchy) 
 			{
