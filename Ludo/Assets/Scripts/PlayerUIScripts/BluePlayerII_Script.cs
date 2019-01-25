@@ -7,7 +7,7 @@ public class BluePlayerII_Script: MonoBehaviour {
 	// Use this for initialization
 	public static string BluePlayerII_ColName;
 
-	void OnTriggerEnter(Collider col)
+	void OnTriggerEnter2D(Collider2D col)
 	{
 	
 		if (col.gameObject.tag == "blocks") 

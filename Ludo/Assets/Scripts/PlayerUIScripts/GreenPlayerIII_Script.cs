@@ -7,14 +7,14 @@ public class GreenPlayerIII_Script : MonoBehaviour {
 	// Use this for initialization
 	public static string GreenPlayerIII_ColName;
 
-	void OnTriggerEnter(Collider col)
+	void OnTriggerEnter2D(Collider2D col)
 	{
 
 		if (col.gameObject.tag == "blocks") 
 		{
 
 			GreenPlayerIII_ColName = col.gameObject.name;
-
+			print ("GreenPlayerIII_ColName:" + GreenPlayerIII_ColName);
 			if (col.gameObject.name.Contains ("Safe House")) 
 			{
 

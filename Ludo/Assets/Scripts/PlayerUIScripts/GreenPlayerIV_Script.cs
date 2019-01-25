@@ -7,7 +7,7 @@ public class GreenPlayerIV_Script : MonoBehaviour {
 	// Use this for initialization
 	public static string GreenPlayerIV_ColName;
 
-	void OnTriggerEnter(Collider col)
+	void OnTriggerEnter2D(Collider2D col)
 	{
 
 		if (col.gameObject.tag == "blocks") 
