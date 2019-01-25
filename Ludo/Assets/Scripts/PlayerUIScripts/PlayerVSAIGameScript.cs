@@ -61,7 +61,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 
 	void InitializeDice()
 	{
-		print ("Dice interactable becomes true");
+//		print ("Dice interactable becomes true");
 
 		DiceRollButton.interactable = true;
 		
@@ -95,54 +95,58 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			if (currentPlayerName == "BLUE PLAYER I") 
 			{
 				currentPlayer = BluePlayerI_Script.BluePlayerI_ColName;
-				print ("currentPlayerName:" + currentPlayerName);
-				print ("currentPlayer:" + currentPlayer);
+//				print ("currentPlayerName:" + currentPlayerName);
+//				print ("currentPlayer:" + currentPlayer);
 			}
 			if (currentPlayerName == "BLUE PLAYER II") 
 			{
 				currentPlayer = BluePlayerII_Script.BluePlayerII_ColName;
-				print ("currentPlayerName:" + currentPlayerName);
-				print ("currentPlayer:" + currentPlayer);
+//				print ("currentPlayerName:" + currentPlayerName);
+//				print ("currentPlayer:" + currentPlayer);
 			}
 			if (currentPlayerName == "BLUE PLAYER III") 
 			{
 				currentPlayer = BluePlayerIII_Script.BluePlayerIII_ColName;
-				print ("currentPlayerName:" + currentPlayerName);
-				print ("currentPlayer:" + currentPlayer);
+//				print ("currentPlayerName:" + currentPlayerName);
+//				print ("currentPlayer:" + currentPlayer);
 			}
 			if (currentPlayerName == "BLUE PLAYER IV") 
 			{
 				currentPlayer = BluePlayerIV_Script.BluePlayerIV_ColName;
-				print ("currentPlayerName:" + currentPlayerName);
-				print ("currentPlayer:" + currentPlayer);
+//				print ("currentPlayerName:" + currentPlayerName);
+//				print ("currentPlayer:" + currentPlayer);
 			}
+			print ("currentPlayerName:" + currentPlayerName);
+			print ("currentPlayer:" + currentPlayer);
 		}
 		if (currentPlayerName.Contains ("GREEN PLAYER")) 
 		{
 			if (currentPlayerName == "GREEN PLAYER I") 
 			{
 				currentPlayer = GreenPlayerI_Script.GreenPlayerI_ColName;
-				print ("currentPlayerName:" + currentPlayerName);
-				print ("currentPlayer:" + currentPlayer);
+//				print ("currentPlayerName:" + currentPlayerName);
+//				print ("currentPlayer:" + currentPlayer);
 			}
 			if (currentPlayerName == "GREEN PLAYER II") 
 			{
 				currentPlayer = GreenPlayerII_Script.GreenPlayerII_ColName;
-				print ("currentPlayerName:" + currentPlayerName);
-				print ("currentPlayer:" + currentPlayer);
+//				print ("currentPlayerName:" + currentPlayerName);
+//				print ("currentPlayer:" + currentPlayer);
 			}
 			if (currentPlayerName == "GREEN PLAYER III") 
 			{
 				currentPlayer = GreenPlayerIII_Script.GreenPlayerIII_ColName;
-				print ("currentPlayerName:" + currentPlayerName);
+//				print ("currentPlayerName:" + currentPlayerName);
 				print ("currentPlayer:" + currentPlayer);
 			}
 			if (currentPlayerName == "GREEN PLAYER IV") 
 			{
 				currentPlayer = GreenPlayerIV_Script.GreenPlayerIV_ColName;
-				print ("currentPlayerName:" + currentPlayerName);
-				print ("currentPlayer:" + currentPlayer);
+//				print ("currentPlayerName:" + currentPlayerName);
+//				print ("currentPlayer:" + currentPlayer);
 			}
+			print ("currentPlayerName:" + currentPlayerName);
+			print ("currentPlayer:" + currentPlayer);
 		}
 
 		//============PLayer vs Opponent=============//
@@ -153,8 +157,10 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			case 2:
 				if (currentPlayerName.Contains ("BLUE PLAYER")) 
 				{
+					print ("Blue Player vs GreenPlayer");
 					if (currentPlayer == GreenPlayerI_Script.GreenPlayerI_ColName && (currentPlayer != "Star" && GreenPlayerI_Script.GreenPlayerI_ColName != "Star")) 
 					{
+						print (" BluePlayer  Beaten GreenPlayerI");
 						GreenPlayerI.transform.position = GreenPlayerI_Pos;
 						GreenPlayerI_Script.GreenPlayerI_ColName = "none";
 						greenPlayerI_Steps = 0;
@@ -162,6 +168,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 					}
 					if (currentPlayer == GreenPlayerII_Script.GreenPlayerII_ColName && (currentPlayer != "Star" && GreenPlayerII_Script.GreenPlayerII_ColName != "Star")) 
 					{
+						print (" BluePlayer  Beaten GreenPlayerII");
 						GreenPlayerII.transform.position = GreenPlayerII_Pos;
 						GreenPlayerII_Script.GreenPlayerII_ColName = "none";
 						greenPlayerII_Steps = 0;
@@ -169,6 +176,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 					}
 					if (currentPlayer == GreenPlayerIII_Script.GreenPlayerIII_ColName && (currentPlayer != "Star" && GreenPlayerIII_Script.GreenPlayerIII_ColName != "Star")) 
 					{
+						print (" BluePlayer  Beaten GreenPlayerIII");
 						GreenPlayerIII.transform.position = GreenPlayerIII_Pos;
 						GreenPlayerIII_Script.GreenPlayerIII_ColName = "none";
 						greenPlayerIII_Steps = 0;
@@ -176,6 +184,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 					}
 					if (currentPlayer == GreenPlayerIV_Script.GreenPlayerIV_ColName && (currentPlayer != "Star" && GreenPlayerIV_Script.GreenPlayerIV_ColName != "Star")) 
 					{
+						print (" BluePlayer  Beaten GreenPlayerIV");
 						GreenPlayerIV.transform.position = GreenPlayerIV_Pos;
 						GreenPlayerIV_Script.GreenPlayerIV_ColName = "none";
 						greenPlayerIV_Steps = 0;
@@ -185,8 +194,10 @@ public class PlayerVSAIGameScript : MonoBehaviour
 
 				if (currentPlayerName.Contains ("GREEN PLAYER")) 
 				{
+					print ("GreenPlayer VS blue Player");
 					if (currentPlayer == BluePlayerI_Script.BluePlayerI_ColName && (currentPlayer != "Star" && BluePlayerI_Script.BluePlayerI_ColName != "Star")) 
 					{
+						print (" GreenPlayer  Beaten BluePlayerI");
 						BluePlayerI.transform.position = BluePlayerI_Pos;
 						BluePlayerI_Script.BluePlayerI_ColName = "none";
 						bluePlayerI_Steps = 0;
@@ -194,6 +205,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 					}
 					if (currentPlayer == BluePlayerII_Script.BluePlayerII_ColName && (currentPlayer != "Star" && BluePlayerII_Script.BluePlayerII_ColName != "Star")) 
 					{
+						print (" GreenPlayer  Beaten BluePlayerII");
 						BluePlayerII.transform.position = BluePlayerII_Pos;
 						BluePlayerII_Script.BluePlayerII_ColName = "none";
 						bluePlayerII_Steps = 0;
@@ -201,6 +213,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 					}
 					if (currentPlayer == BluePlayerIII_Script.BluePlayerIII_ColName && (currentPlayer != "Star" && BluePlayerIII_Script.BluePlayerIII_ColName != "Star")) 
 					{
+						print (" GreenPlayer  Beaten BluePlayerIII");
 						BluePlayerIII.transform.position = BluePlayerIII_Pos;
 						BluePlayerIII_Script.BluePlayerIII_ColName = "none";
 						bluePlayerIII_Steps = 0;
@@ -208,6 +221,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 					}
 					if (currentPlayer == BluePlayerIV_Script.BluePlayerIV_ColName && (currentPlayer != "Star" && BluePlayerIV_Script.BluePlayerIV_ColName != "Star")) 
 					{
+						print (" GreenPlayer  Beaten BluePlayerIV");
 						BluePlayerIV.transform.position = BluePlayerIV_Pos;
 						BluePlayerIV_Script.BluePlayerIV_ColName = "none";
 						bluePlayerIV_Steps = 0;
@@ -231,6 +245,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 				GreenFrame.SetActive (true);
 			}
 			//=================disabling buttons==============//
+
 			BluePlayerI_Button.interactable = false;
 			BluePlayerII_Button.interactable = false;
 			BluePlayerIII_Button.interactable = false;
@@ -240,6 +255,20 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			GreenPlayerII_Button.interactable = false;
 			GreenPlayerI_Button.interactable = false;
 			GreenPlayerIV_Button.interactable = false;
+
+			//==============disabling the raycast===============//
+			/*
+			BluePlayerI_Button.GetComponent<Image>().raycastTarget=false;
+			BluePlayerII_Button.GetComponent<Image>().raycastTarget=false;
+			BluePlayerIII_Button.GetComponent<Image>().raycastTarget=false;
+			BluePlayerIV_Button.GetComponent<Image>().raycastTarget=false;
+
+			GreenPlayerI_Button.GetComponent<Image>().raycastTarget=false;
+			GreenPlayerII_Button.GetComponent<Image>().raycastTarget=false;
+			GreenPlayerI_Button.GetComponent<Image>().raycastTarget=false;
+			GreenPlayerIV_Button.GetComponent<Image>().raycastTarget=false;
+			*/
+			//==================================================//
 
 			//===================disabling Animations===========//
 			BluePlayerI_Border.SetActive (false);
@@ -255,12 +284,24 @@ public class PlayerVSAIGameScript : MonoBehaviour
 		}
 		selectDiceNumAnimation = 0;
 	}
+	void AIMove()
+	{
+		int number = Random.Range (1, 5);
+		if (number == 1 && GreenPlayerI_Border.activeInHierarchy) 
+		{
+			BlueplayerII_UI ();
+		}
+		if (number == 2) 
+		{
+			
+		}
+	}
 	public void DiceRoll()
 	{
 		DiceRollButton.interactable = false;
-		print ("DiceRollButton interactable:" + DiceRollButton.interactable);
+//		print ("DiceRollButton interactable:" + DiceRollButton.interactable);
 		selectDiceNumAnimation = randomNo.Next (1, 7);
-		print ("selectDiceNumAnimation:" + selectDiceNumAnimation);
+//		print ("selectDiceNumAnimation:" + selectDiceNumAnimation);
 		switch (selectDiceNumAnimation) 
 		{
 		//when got one plays one animation
@@ -330,11 +371,11 @@ public class PlayerVSAIGameScript : MonoBehaviour
 		{
 		case "BLUE":
 			//=============condition for border glow=============
-			print ("Conditon for the border GLOW");
-			print ("blueMovemenBlock.Count-bluePlayerI_Steps:" + (blueMovemenBlock.Count - bluePlayerI_Steps) + "blueMovemenBlock.Count:" + blueMovemenBlock.Count + "bluePlayerI_Steps:" + bluePlayerI_Steps);
+//			print ("Conditon for the border GLOW");
+//			print ("blueMovemenBlock.Count-bluePlayerI_Steps:" + (blueMovemenBlock.Count - bluePlayerI_Steps) + "blueMovemenBlock.Count:" + blueMovemenBlock.Count + "bluePlayerI_Steps:" + bluePlayerI_Steps);
 
 			if ((blueMovemenBlock.Count - bluePlayerI_Steps) >= selectDiceNumAnimation && bluePlayerI_Steps > 0 && (blueMovemenBlock.Count > bluePlayerI_Steps)) {
-				print ("BluePlayerI border glows");
+//				print ("BluePlayerI border glows");
 				BluePlayerI_Border.SetActive (true);
 				BluePlayerI_Button.interactable = true;
 			} else {
@@ -343,7 +384,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			}
 
 			if ((blueMovemenBlock.Count - bluePlayerII_Steps) >= selectDiceNumAnimation && bluePlayerII_Steps > 0 && (blueMovemenBlock.Count > bluePlayerII_Steps)) {
-				print ("BluePlayerII border glows");
+//				print ("BluePlayerII border glows");
 				BluePlayerII_Border.SetActive (true);
 				BluePlayerII_Button.interactable = true;
 			} else {
@@ -352,7 +393,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			}
 
 			if ((blueMovemenBlock.Count - bluePlayerIII_Steps) >= selectDiceNumAnimation && bluePlayerIII_Steps > 0 && (blueMovemenBlock.Count > bluePlayerIII_Steps)) {
-				print ("BluePlayerIII border glows");
+//				print ("BluePlayerIII border glows");
 				BluePlayerIII_Border.SetActive (true);
 				BluePlayerIII_Button.interactable = true;
 			} else {
@@ -361,7 +402,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			}
 
 			if ((blueMovemenBlock.Count - bluePlayerIV_Steps) >= selectDiceNumAnimation && bluePlayerIV_Steps > 0 && (blueMovemenBlock.Count > bluePlayerIV_Steps)) {
-				print ("BluePlayerIV border glows");
+//				print ("BluePlayerIV border glows");
 				BluePlayerIV_Border.SetActive (true);
 				BluePlayerIV_Button.interactable = true;
 			} else {
@@ -372,25 +413,25 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			//===============Players border glow When Opening===============//
 
 			if (selectDiceNumAnimation == 6 && bluePlayerI_Steps == 0) {
-				print ("Border glow of BluePlayerI When Opening");
+//				print ("Border glow of BluePlayerI When Opening");
 				BluePlayerI_Border.SetActive (true);
 				BluePlayerI_Button.interactable = true;
 			}
 
 			if (selectDiceNumAnimation == 6 && bluePlayerII_Steps == 0) {
-				print ("Border glow of BluePlayerI When Opening");
+//				print ("Border glow of BluePlayerI When Opening");
 				BluePlayerII_Border.SetActive (true);
 				BluePlayerII_Button.interactable = true;
 			}
 
 			if (selectDiceNumAnimation == 6 && bluePlayerIII_Steps == 0) {
-				print ("BluePlayerIII border glows when opening");
+//				print ("BluePlayerIII border glows when opening");
 				BluePlayerIII_Border.SetActive (true);
 				BluePlayerIII_Button.interactable = true;
 			}
 
 			if (selectDiceNumAnimation == 6 && bluePlayerIV_Steps == 0) {
-				print ("BluePlayerIV border glows when opening");
+//				print ("BluePlayerIV border glows when opening");
 				BluePlayerIV_Border.SetActive (true);
 				BluePlayerIV_Button.interactable = true;
 			}
@@ -407,7 +448,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 				switch (ExtraSceneController.HowManyPlayers) 
 				{
 				case 2:
-					print ("PLAYERS DON'T HAVE OPTION TO MOVE , SWITCH TO NEXT PLAYER TURN");
+//					print ("PLAYERS DON'T HAVE OPTION TO MOVE , SWITCH TO NEXT PLAYER TURN");
 					playerTurn = "GREEN";
 					InitializeDice ();
 				break;
@@ -418,11 +459,11 @@ public class PlayerVSAIGameScript : MonoBehaviour
 
 		case "GREEN":
 			//=============condition for border glow=============
-			print ("Conditon for the border GLOW");
-			print ("greenMovementBlock.Count-greenPlayerI_Steps:" + (greenMovementBlock.Count - greenPlayerI_Steps) + "greenMovementBlock.Count:" + greenMovementBlock.Count + "greenPlayerI_Steps:" + greenPlayerI_Steps);
+//			print ("Conditon for the border GLOW");
+//			print ("greenMovementBlock.Count-greenPlayerI_Steps:" + (greenMovementBlock.Count - greenPlayerI_Steps) + "greenMovementBlock.Count:" + greenMovementBlock.Count + "greenPlayerI_Steps:" + greenPlayerI_Steps);
 
 			if ((greenMovementBlock.Count - greenPlayerI_Steps) >= selectDiceNumAnimation && greenPlayerI_Steps > 0 && (greenMovementBlock.Count > greenPlayerI_Steps)) {
-				print ("GreenPlayerI border glows");
+//				print ("GreenPlayerI border glows");
 				GreenPlayerI_Border.SetActive (true);
 				GreenPlayerI_Button.interactable = true;
 			} else {
@@ -431,7 +472,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			}
 
 			if ((greenMovementBlock.Count - greenPlayerII_Steps) >= selectDiceNumAnimation && greenPlayerII_Steps > 0 && (greenMovementBlock.Count > greenPlayerII_Steps)) {
-				print ("GreenPlayerII border glows");
+//				print ("GreenPlayerII border glows");
 				GreenPlayerII_Border.SetActive (true);
 				GreenPlayerII_Button.interactable = true;
 			} else {
@@ -440,7 +481,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			}
 
 			if ((greenMovementBlock.Count - greenPlayerIII_Steps) >= selectDiceNumAnimation && greenPlayerIII_Steps > 0 && (greenMovementBlock.Count > greenPlayerIII_Steps)) {
-				print ("GreenPlayerIII border glows");
+//				print ("GreenPlayerIII border glows");
 				GreenPlayerIII_Border.SetActive (true);
 				GreenPlayerIII_Button.interactable = true;
 			} else {
@@ -450,7 +491,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 
 			if ((greenMovementBlock.Count - greenPlayerIV_Steps) >= selectDiceNumAnimation && greenPlayerIV_Steps > 0 && (greenMovementBlock.Count > greenPlayerIV_Steps)) 
 			{
-				print ("GreenPlayerIV border glows");
+//				print ("GreenPlayerIV border glows");
 				GreenPlayerIV_Border.SetActive (true);
 				GreenPlayerIV_Button.interactable = true;
 			} 
@@ -463,25 +504,25 @@ public class PlayerVSAIGameScript : MonoBehaviour
 			//===============Players border glow When Opening===============//
 
 			if (selectDiceNumAnimation == 6 && greenPlayerI_Steps == 0) {
-				print ("GreenPlayerI border glows when opening");
+//				print ("GreenPlayerI border glows when opening");
 				GreenPlayerI_Border.SetActive (true);
 				GreenPlayerI_Button.interactable = true;
 			}
 
 			if (selectDiceNumAnimation == 6 && greenPlayerII_Steps == 0) {
-				print ("GreenPlayerII border glows when opening");
+//				print ("GreenPlayerII border glows when opening");
 				GreenPlayerII_Border.SetActive (true);
 				GreenPlayerII_Button.interactable = true;
 			}
 
 			if (selectDiceNumAnimation == 6 && greenPlayerIII_Steps == 0) {
-				print ("GreenPlayerIII border glows when opening");
+//				print ("GreenPlayerIII border glows when opening");
 				GreenPlayerIII_Border.SetActive (true);
 				GreenPlayerIII_Button.interactable = true;
 			}
 
 			if (selectDiceNumAnimation == 6 && greenPlayerIV_Steps == 0) {
-				print ("GreenPlayerIV border glows when opening");
+//				print ("GreenPlayerIV border glows when opening");
 				GreenPlayerIV_Border.SetActive (true);
 				GreenPlayerIV_Button.interactable = true;
 			}
@@ -498,7 +539,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 				switch (ExtraSceneController.HowManyPlayers) 
 				{
 				case 2:
-					print ("GREEN PLAYER DON'T HAVE OPTION TO MOVE , SWITCH TO NEXT PLAYER TURN");
+//					print ("GREEN PLAYER DON'T HAVE OPTION TO MOVE , SWITCH TO NEXT PLAYER TURN");
 					playerTurn = "BLUE";
 					InitializeDice ();
 					break;
@@ -1025,7 +1066,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 
 				greenPlayerI_Steps += selectDiceNumAnimation;
 
-				playerTurn = "BLUE";
+				playerTurn = "GREEN";
 
 				if (greenPlayer_Path.Length > 1) 
 				{
@@ -1134,7 +1175,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 
 				greenPlayerII_Steps += selectDiceNumAnimation;
 
-				playerTurn = "BLUE";
+				playerTurn = "GREEN";
 
 				if (greenPlayer_Path.Length > 1) 
 				{
@@ -1204,7 +1245,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 					}
 				}
 
-				currentPlayerName = "GREEN PLAYER IV";
+				currentPlayerName = "GREEN PLAYER III";
 
 				if (greenPlayer_Path.Length > 1) 
 				{
@@ -1223,7 +1264,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 					greenPlayer_Path [0] = greenMovementBlock [greenPlayerIII_Steps].transform.position;
 					greenPlayerIII_Steps += 1;
 					playerTurn = "GREEN";
-					currentPlayerName = "GREEN PLAYER IV";
+					currentPlayerName = "GREEN PLAYER III";
 					iTween.MoveTo (GreenPlayerIII, iTween.Hash ("position", greenPlayer_Path [0], "speed", 125, "time", 2.0f, "easetype", "elastic", "looptype", "none", "oncomplete", "InitializeDice", "oncompletetarget", this.gameObject));
 				}
 			}
@@ -1243,7 +1284,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 
 				greenPlayerIII_Steps += selectDiceNumAnimation;
 
-				playerTurn = "BLUE";
+				playerTurn = "GREEN";
 
 				if (greenPlayer_Path.Length > 1) 
 				{
@@ -1352,7 +1393,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 
 				greenPlayerIV_Steps += selectDiceNumAnimation;
 
-				playerTurn = "BLUE";
+				playerTurn = "GREEN";
 
 				if (greenPlayer_Path.Length > 1) 
 				{
@@ -1424,7 +1465,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 		switch (ExtraSceneController.HowManyPlayers) 
 		{
 		case 2:
-			print ("Two Players");
+//			print ("Two Players");
 			playerTurn = "BLUE";
 			BlueFrame.SetActive (true);
 			GreenFrame.SetActive (false);
@@ -1433,6 +1474,7 @@ public class PlayerVSAIGameScript : MonoBehaviour
 	}
 	void Update()
 	{
-//		print ("PlayerTurn:"+playerTurn);
+//		print ("currentPlayerName:"+currentPlayerName);
+//		print ("currentPlayer:" + currentPlayer);
 	}
 }
